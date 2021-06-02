@@ -88,45 +88,4 @@ w=i.getElementsByTagName(g)[0];w.parentNode.insertBefore(r,w);
 </html>
  
  
-<html>
-<head>
-
-</head>
-<body>
-<center>
-<img src="Button-RequestCallback.jpg"></br>
-<span>
-Please enter the details to allow us to call you back
-</span>
-
-<form name="WebCallBack" action="https://vcc-na12.8x8.com/SC/webcallback.php" method="get"  oninput="extTransactionData.value = '[Name|' + fname.value +' '+ lname.value + '][Location|' + location.value + '][Reason|' + reason.value +']'">
-<input type="hidden" name="extTransactionData"/>
-<!--  You Need to change these -->
-<input type="hidden" name="tenant" value="uksedemo2001"/>
-<input type="hidden" name="token" value="bb068aa8757370cf74326ffada8615bdf6b6f499280dd9a487d7f37af2790558"/>  <!-- from CM -->
-<input type="hidden" name="channel_number" value="441296840040"/>
-<input type="hidden" name="callback_type" value="1"/>    <!-- Immediate -->
-<input type="hidden" name="queue_id" value="163"/>    <!--This must match your Q id from CM -->
-<!--  End Changes change these -->
-<input type="hidden" name="back" value="http://www.uwasc.org/"/>
-<input type="hidden" name="expiration" value="1200"/><br/>
-<table>
-<tr><td>First name:</td><td> <input type="text" name="fname"/></td></tr>
-<tr><td>Last name:</td><td><input type="text" name="lname" /></td></tr>
-<tr><td>Location:</td><td><input type="text" name="location" /></td></tr>
-<tr><td>Reason:</td><td><select name="reason">
-<option value="Installation">Installation</option>
-<option value="Technical Support">Technical Support</option>
-<option value="Information" selected>Information</option>
-<option value="Other">Other</option>
-</select></td></tr>
-<tr><td>Phone:</td><td><input type="tel" name="phone" /></td></tr>
-<tr><td colspan="2" style="text-align:center"><input type="submit" value="Call Me"/></td></tr>
-
-</table>
-</form>
-</center>
-
-</body>	
-</html>
 
