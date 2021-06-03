@@ -83,11 +83,11 @@ Please enter the details to allow us to call you back </br>
 <form name="WebCallBack" action="https://vcc-na12.8x8.com/SC/webcallback.php" method="get"  oninput="extTransactionData.value = '[Name|' + fname.value +' '+ lname.value + '][Location|' + location.value + '][Reason|' + reason.value +']'">
 <input type="hidden" name="extTransactionData"/>
 <!--  You Need to change these -->
-<input type="hidden" name="tenant" value="Your TEnant"/>
-<input type="hidden" name="token" value="Your Token"/>  <!-- from CM -->
-<input type="hidden" name="channel_number" value="The Channel Number"/>
+<input type="hidden" name="tenant" value="uksedemo2001"/>
+<input type="hidden" name="token" value="50b7ba56ce2a8469f10294085bea28552eb8dca8fb8d54c39a3c885fb091c9d3"/>  <!-- from CM -->
+<input type="hidden" name="channel_number" value="441296840040"/>
 <input type="hidden" name="callback_type" value="1"/>    <!-- Immediate -->
-<input type="hidden" name="queue_id" value="Queue ID"/>    <!--This must match your Q id from CM -->
+<input type="hidden" name="queue_id" value="111"/>    <!--This must match your Q id from CM -->
 <!--  End Changes change these -->
 <input type="hidden" name="back" value="http://www.uwasc.org/"/>
 <input type="hidden" name="expiration" value="1200"/><br/>
