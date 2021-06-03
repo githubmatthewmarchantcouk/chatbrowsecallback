@@ -63,9 +63,7 @@ nav ul li a:hover {
 }
 
 #VideoConf {
- width: auto;
- height: auto;
- 
+ padding: 100px;
   <!-- top: 20; -->
   <!-- line-height: 1.6; -->
   <!-- background: #F5F5F5; -->
