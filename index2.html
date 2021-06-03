@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>8x8 Partner Enablement</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+
+    <nav>
+      <ul id="navbar">
+        <li><div id="__8x8-chat-button-container-script_9601566935b0569b1257fb3.31947744"></div>
+        <li><a href="#" onclick="window.coBrowsingInstance && coBrowsingInstance.showPopup();return false;">Help
+        <li><a href="#contact" rel="internal">Callback</a></li>
+      </ul>
+    </nav>
+  
+
+<body>
+
+<!-- This script will not interfere with the button layout, you just need to include it in the same page. It must also be within the <body> section of the page, preferably just before the ending tag. -->
+<script type="text/javascript">
+    window.__8x8Chat = {
+        uuid: "script_9601566935b0569b1257fb3.31947744",
+        tenant: "dWtzZWRlbW8yMDAx",
+        channel: "SME Chat",
+        domain: "https://vcc-na12.8x8.com",
+        path: "/.",
+        buttonContainerId: "__8x8-chat-button-container-script_9601566935b0569b1257fb3.31947744",
+        align: "right"
+    };
+
+    (function() {
+        var se = document.createElement("script");
+        se.type = "text/javascript";
+        se.async = true;
+        se.src = window.__8x8Chat.domain + window.__8x8Chat.path + "/CHAT/common/js/chat.js";
+
+        var os = document.getElementsByTagName("script")[0];
+        os.parentNode.insertBefore(se, os);
+    })();
+</script>
+    
+    
+    
+  <div id="welcome-section" >
+      
+<img src="8x8uni.JPG">
+
+    <h1>Welcome to my world</h1>
+    <p>Gently hatching from the programming egg.</p>
+  </div>
+
+<div id="projects" class="work">
+<h2 class="work-header">Here is what I have done</h2>
+  
+</div>
+
+  <div class="contact">
+  <div class="header">
+    <h1>Ways to get in touch</h1>
+    <p>or send me a message!</p>
+  </div>
+<img src="veederlogo.png"></br>
+<span>
+Please enter the details to allow us to call you back
+</span>
+
+<form name="WebCallBack" action="https://vcc-na12.8x8.com/SC/webcallback.php" method="get"  oninput="extTransactionData.value = '[Name|' + fname.value +' '+ lname.value + '][Location|' + location.value + '][Reason|' + reason.value +']'">
+<input type="hidden" name="extTransactionData"/>
+<!--  You Need to change these -->
+<input type="hidden" name="tenant" value="Your TEnant"/>
+<input type="hidden" name="token" value="Your Token"/>  <!-- from CM -->
+<input type="hidden" name="channel_number" value="The Channel Number"/>
+<input type="hidden" name="callback_type" value="1"/>    <!-- Immediate -->
+<input type="hidden" name="queue_id" value="Queue ID"/>    <!--This must match your Q id from CM -->
+<!--  End Changes change these -->
+<input type="hidden" name="back" value="http://www.uwasc.org/"/>
+<input type="hidden" name="expiration" value="1200"/><br/>
+<table>
+<tr><td>First name:</td><td> <input type="text" name="fname"/></td></tr>
+<tr><td>Last name:</td><td><input type="text" name="lname" /></td></tr>
+<tr><td>Location:</td><td><input type="text" name="location" /></td></tr>
+<tr><td>Reason:</td><td><select name="reason">
+<option value="Installation">Installation</option>
+<option value="Technical Support">Technical Support</option>
+<option value="Information" selected>Information</option>
+<option value="Other">Other</option>
+</select></td></tr>
+<tr><td>Phone:</td><td><input type="tel" name="phone" /></td></tr>
+<tr><td colspan="2" style="text-align:center"><input type="submit" value="Call Me"/></td></tr>
+
+</table>
+</form>
+</center>
+</div>
+ </body>
+</html>
