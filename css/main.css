@@ -59,6 +59,7 @@ nav ul li a:hover {
 
 #VideoConf {
   top: 5;
+  width: 50%;
   line-height: 1.6;
   background: #F5F5F5;
   min-height: 100vh;
