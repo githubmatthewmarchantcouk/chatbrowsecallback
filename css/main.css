@@ -46,21 +46,15 @@ nav ul li a:hover {
 }
   
 
-/* contact */
+/* Callback */
 
-.contact {
+.Callback {
   background-color: #ababab;
   padding: 60px ;
   line-height: 1.6;
   text-align:
   }
 
-.contact-details {
-  padding: 60px;
-  display: inline-block;
-  text-align:
-  
-}
 
 #VideoConf {
   top: 100;
