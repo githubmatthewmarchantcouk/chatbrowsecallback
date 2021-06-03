@@ -49,11 +49,13 @@ nav ul li a:hover {
 /* Callback */
 
 #Callback {
-  background-color: #ababab;
-  padding: 60px ;
+  top: 20;
   line-height: 1.6;
-  text-align:
-  }
+  background: #F5F5F5;
+  min-height: 55vh;
+  padding-top: 45vh;
+  text-align: 
+}
 
 
 
