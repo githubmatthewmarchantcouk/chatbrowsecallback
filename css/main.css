@@ -63,11 +63,10 @@ nav ul li a:hover {
 }
 
 #VideoConf {
- padding: 100px;
-  <!-- top: 20; -->
-  <!-- line-height: 1.6; -->
-  <!-- background: #F5F5F5; -->
-  <!-- min-height: 110vh; -->
-  <!-- padding-top: 90vh; -->
-  <!-- text-align:  -->
+  top: 100;
+  line-height: 1.6;
+  background: #F5F5F5;
+  min-height: 550vh;
+  padding-top: 450vh;
+  text-align: 
 }
