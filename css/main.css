@@ -3,6 +3,7 @@ html,
 body {
   font-family: 'comfortaa', sans-serif;
   text-align: right;
+  
 }
 
 * {
@@ -19,6 +20,7 @@ body {
   background-color: #Fff;
   font-family: "comfortaa",sans-serif; 
   font-size: 1.2em;
+  opacity: 0.5;
 }
 
 nav ul li {
