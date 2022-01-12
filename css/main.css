@@ -18,7 +18,8 @@ body {
   width: 100%;
   background-color: #Fff;
   font-family: "comfortaa",sans-serif; 
-  font-size: 1.2em; 
+  font-size: 1.2em;
+  opacity: 0.5;
 }
 
 nav ul li {
