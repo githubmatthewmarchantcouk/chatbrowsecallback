@@ -18,6 +18,7 @@ body {
   text-align: right;
   width: 100%;
   background-color: #Fff;
+  background: rgba(255,255,255,0.9);
   font-family: "comfortaa",sans-serif; 
   font-size: 1.2em;
 }
