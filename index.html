@@ -168,7 +168,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 280px;
+  width: 245px;
 }
 
 /* The popup form - hidden by default */
@@ -226,11 +226,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 </style>
 </head>
+<body>
 
-<button class="open-button" onclick="openForm()">Open Form</button>
+
+
+<button class="open-button" onclick="openForm()">Request a Callback</button>
 
 <div class="form-popup" id="myForm">
-<form name="WebCallBack" action="https://vcc-eu5.8x8.com/SC/webcallback.php" method="get"  oninput="extTransactionData.value = '[Name|' + fname.value +' '+ lname.value + '][Location|' + location.value + '][Reason|' + reason.value +']'">
+  
+  <form name="WebCallBack" action="https://vcc-eu5.8x8.com/SC/webcallback.php" method="get"  oninput="extTransactionData.value = '[Name|' + fname.value +' '+ lname.value + '][Location|' + location.value + '][Reason|' + reason.value +']'">
 <input type="hidden" name="extTransactionData"/>
 <!--  You Need to change these -->
 <input type="hidden" name="tenant" value="uksalesenablement47801"/>
@@ -238,19 +242,31 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <input type="hidden" name="channel_number" value="442039845210"/>
 <input type="hidden" name="callback_type" value="1"/>    <!-- Immediate -->
 <input type="hidden" name="queue_id" value="107"/>    <!--This must match your Q id from CM -->
-<!--  End Changes change these -->	
+<!--  End Changes change these -->
+<input type="hidden" name="back" value="https://www.8x8.com/university/partners/"/>
+<input type="hidden" name="expiration" value="1200"/><br/>
+<table>
+<tr><td>First name:</td><td> <input type="text" name="fname"/></td></tr>
+<tr><td>Last name:</td><td><input type="text" name="lname" /></td></tr>
+<tr><td>Location:</td><td><input type="text" name="location" /></td></tr>
+<tr><td>Reason:</td><td><select name="reason">
+<option value="Sales Training">Sales Training</option>
+<option value="Technical Training">Technical Training</option>
+<option value="Information" selected>Information</option>
+<option value="Other">Other</option>
+</select></td></tr>
+<tr><td>Phone:</td><td><input type="tel" name="phone" /></td></tr>
+<tr><td colspan="2" style="text-align:center"><input type="submit" value="Call Me"/></td></tr>
+
+</table>
+</form>
   
-    <h1>Request Callback</h1>
-	
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+  <form action="/action_page.php" class="form-container">
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
+  
+  
 </div>
 
 <script>
