@@ -70,3 +70,36 @@ nav ul li a:hover {
   text-align: 
 }
 
+/* Co Browse */
+
+body.replica,
+body.replica.status-ready {
+    background-color: #EAEAEA;
+}
+
+body.replica.status-primary-disconnected {
+    background-color: #f0ad4e;
+}
+
+body.replica.status-disconnected {
+    background-color: #d9534f;
+}
+
+body.replica .close {
+    border: 1px solid black;
+    color: black;
+}
+
+body.replica .replica-title {
+    color: black;
+}
+
+body.popup .window {
+    border: solid 3px #134C75;
+}
+
+body.popup .window-header {
+    background-color: #e87415;
+}
+
+
