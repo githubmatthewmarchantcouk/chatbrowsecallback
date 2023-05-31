@@ -8,6 +8,7 @@
 
     <nav>
       <ul id="navbar">
+	<li><div id="__8x8-chat-button-container-script_8950202745c7e8852b20f41.87783975"></div></li>
         <li><a href="#" onclick="window.coBrowsingInstance && coBrowsingInstance.showPopup();return false;"><img src="screen share (2).gif"><p style="text-align:center">Help!</p></a></li>
 	<li><a href="https://8x8.vc/8x8/matthew.marchant" target="_blank"><img src="ezgif.com-video-to-gif (1).gif"><p style="text-align:center">Let's Meet</p></a></li>
 	<li style="float:left"><img src="8x8 enablement page.JPG"></a></li>
@@ -17,6 +18,34 @@
   
 
 <body>
+<!-- Place this code snippet anywhere you want the button to appear in your page. If no button has been configured in the chat script, it will not show up nor take any space. -->
+<div id="__8x8-chat-button-container-script_8950202745c7e8852b20f41.87783975"></div>
+
+<!-- This script will not interfere with the button layout, you just need to include it in the same page. It must also be within the <body> section of the page, preferably just before the ending tag. -->
+<script type="text/javascript">
+    window.__8x8Chat = {
+        uuid: "script_8950202745c7e8852b20f41.87783975",
+        tenant: "dWtzYWxlc2VuYWJsZW1lbnQ0NzgwMQ",
+        channel: "Enablement Chat", 
+        channelUuid: "-Raou-cORKa0NfKTuzbMtQ", 
+        domain: "https://vcc-eu5.8x8.com",
+        path: "/.",
+        buttonContainerId: "__8x8-chat-button-container-script_8950202745c7e8852b20f41.87783975",
+        align: "right"
+    };
+
+    (function() {
+        var se = document.createElement("script");
+        se.type = "text/javascript";
+        se.async = true;
+        se.src = window.__8x8Chat.domain + window.__8x8Chat.path + "/CHAT/common/js/chat.js";
+
+        var os = document.getElementsByTagName("script")[0];
+        os.parentNode.insertBefore(se, os);
+    })();
+</script>
+	
+
     <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
     <link
     rel="stylesheet"
